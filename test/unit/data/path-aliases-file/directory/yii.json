@@ -1,0 +1,8 @@
+{
+	"aliases": {
+		"@app/controllers" : ["controllers", "mycontrollers"],
+		"@app/models" : ["mymodels"],
+		"@app/views" : ["themes/basic", "views", "views2"],
+		"@yii": ["vendor/yiisoft/yii2"]
+	}
+}
