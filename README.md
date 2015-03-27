@@ -47,6 +47,27 @@ It's json file. It has a format like the following:
 
 **NOTE**: Can't recognize altogether aliases.
 
+## Create a New Project via Composer
+
+### Preparation
+
+1. Open your terminal
+2. Install Composer
+3. `composer global require "fxp/composer-asset-plugin:1.0.0"`
+4. `composer config (--global) github-oauth.github.com YOUR_TOKEN`
+
+You can create a personal token at https://github.com/settings/applications
+
+### Steps
+
+1. New Project > PHP > Yii2 Framework Application
+2. Input proper values
+3. Finished
+
+### NOTE
+
+If it fails, please run the composer command using the terminal manually.
+
 ## Downloads
 
 - https://github.com/nbphpcouncil/nb-yii2-plugin/releases
