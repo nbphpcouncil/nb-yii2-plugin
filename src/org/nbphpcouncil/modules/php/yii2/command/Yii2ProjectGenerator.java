@@ -94,7 +94,7 @@ public final class Yii2ProjectGenerator {
         File workDir = projectDirectory.getParentFile();
         PhpExecutable phpExecutable = new PhpExecutable(composerPath)
                 .workDir(workDir)
-                .additionalParameters(Arrays.asList("create-project", "--prefer-dist", "--stability=dev", repository, projectName)); // NOI18N
+                .additionalParameters(Arrays.asList("create-project", "--prefer-dist", repository, projectName)); // NOI18N
         Future<Integer> result = phpExecutable.run();
         if (result != null) {
             try {
