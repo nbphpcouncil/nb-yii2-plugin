@@ -32,7 +32,7 @@ Please use the following template:
 ## Pull Requests
 
 Please don't send your pull requests to `master` branch. 
-Let we know if the repository has only `master` branch.
+Let us know if the repository has only `master` branch.
 
 A branch for development will be named nb** (e.g. nb80).
 Please send your pull requests there.
