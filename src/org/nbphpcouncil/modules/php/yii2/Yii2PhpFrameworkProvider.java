@@ -41,7 +41,6 @@
  */
 package org.nbphpcouncil.modules.php.yii2;
 
-import java.io.File;
 import org.nbphpcouncil.modules.php.yii2.editor.Yii2EditorExtender;
 import org.nbphpcouncil.modules.php.yii2.preferences.Yii2Preferences;
 import org.nbphpcouncil.modules.php.yii2.ui.actions.Yii2PhpModuleActionsExtender;
@@ -57,6 +56,7 @@ import org.netbeans.modules.php.spi.framework.PhpModuleCustomizerExtender;
 import org.netbeans.modules.php.spi.framework.PhpModuleExtender;
 import org.netbeans.modules.php.spi.framework.PhpModuleIgnoredFilesExtender;
 import org.netbeans.modules.php.spi.framework.commands.FrameworkCommandSupport;
+import org.netbeans.modules.php.spi.phpmodule.ImportantFilesImplementation;
 import org.openide.util.ImageUtilities;
 import org.openide.util.NbBundle;
 
@@ -113,11 +113,11 @@ public final class Yii2PhpFrameworkProvider extends PhpFrameworkProvider {
      *
      *
      * @param phpModule PhpModule
-     * @return File[]
+     * @return ImportantFilesImplementation
      */
     @Override
-    public File[] getConfigurationFiles(PhpModule phpModule) {
-        return new File[0];
+    public ImportantFilesImplementation getConfigurationFiles2(PhpModule phpModule) {
+        return super.getConfigurationFiles2(phpModule);
     }
 
     @Override
